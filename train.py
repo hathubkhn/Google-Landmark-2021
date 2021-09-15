@@ -28,7 +28,7 @@ from torch.utils.data.sampler import SubsetRandomSampler
 import shutil
 import pickle
 import copy
-import tqdm
+from tqdm import tqdm
 
 def train_val_dataset(dataset, val_split=0.25):
     train_idx, val_idx = train_test_split(list(range(len(dataset))), test_size=val_split)
